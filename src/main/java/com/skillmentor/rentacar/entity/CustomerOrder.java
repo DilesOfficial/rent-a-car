@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.UUID;
 
 @AllArgsConstructor
@@ -29,4 +30,7 @@ public class CustomerOrder {
     private double totalCost;
 
     private LocalDate date;
+
+    @OneToMany(mappedBy = "customerOrder", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<OrderDetails> detailsList;
 }
