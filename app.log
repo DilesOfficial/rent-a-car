@@ -563,3 +563,44 @@ Caused by: org.hibernate.AnnotationException: Association 'com.skillmentor.renta
 2026-07-29T22:10:54.748+05:30  INFO 55491 --- [rentacar] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-07-29T22:10:54.758+05:30  INFO 55491 --- [rentacar] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 >>>>>>> Stashed changes
+2026-07-31T19:34:32.328+05:30  INFO 16485 --- [rentacar] [restartedMain] c.s.rentacar.RentacarApplication         : Starting RentacarApplication using Java 25 with PID 16485 (/Users/dilushaeshan/Downloads/rentacar/target/classes started by dilushaeshan in /Users/dilushaeshan/Downloads/rentacar)
+2026-07-31T19:34:32.329+05:30 DEBUG 16485 --- [rentacar] [restartedMain] c.s.rentacar.RentacarApplication         : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-31T19:34:32.329+05:30  INFO 16485 --- [rentacar] [restartedMain] c.s.rentacar.RentacarApplication         : The following 1 profile is active: "dev"
+2026-07-31T19:34:32.350+05:30  INFO 16485 --- [rentacar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-31T19:34:32.351+05:30  INFO 16485 --- [rentacar] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-31T19:34:32.625+05:30  INFO 16485 --- [rentacar] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-31T19:34:32.648+05:30  INFO 16485 --- [rentacar] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+2026-07-31T19:34:32.863+05:30  INFO 16485 --- [rentacar] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8000 (http)
+2026-07-31T19:34:32.870+05:30  INFO 16485 --- [rentacar] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-31T19:34:32.870+05:30  INFO 16485 --- [rentacar] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-31T19:34:32.885+05:30  INFO 16485 --- [rentacar] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 534 ms
+2026-07-31T19:34:32.965+05:30  INFO 16485 --- [rentacar] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-31T19:34:32.993+05:30  INFO 16485 --- [rentacar] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-31T19:34:33.207+05:30  INFO 16485 --- [rentacar] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-31T19:34:33.224+05:30  INFO 16485 --- [rentacar] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-31T19:34:33.634+05:30  INFO 16485 --- [rentacar] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25534294
+2026-07-31T19:34:33.635+05:30  INFO 16485 --- [rentacar] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-31T19:34:33.687+05:30  WARN 16485 --- [rentacar] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-31T19:34:33.695+05:30  INFO 16485 --- [rentacar] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/rentacar?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.7.1
+	Default catalog/schema: rentacar/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-31T19:34:34.164+05:30  INFO 16485 --- [rentacar] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-31T19:34:34.424+05:30  INFO 16485 --- [rentacar] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-31T19:34:34.453+05:30  WARN 16485 --- [rentacar] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-31T19:34:34.617+05:30  INFO 16485 --- [rentacar] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-31T19:34:34.704+05:30  INFO 16485 --- [rentacar] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8000 (http) with context path '/api/v1'
+2026-07-31T19:34:34.707+05:30  INFO 16485 --- [rentacar] [restartedMain] c.s.rentacar.RentacarApplication         : Started RentacarApplication in 2.572 seconds (process running for 2.935)
+2026-07-31T19:36:53.984+05:30  INFO 16485 --- [rentacar] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-31T19:36:53.993+05:30  INFO 16485 --- [rentacar] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-31T19:36:53.997+05:30  INFO 16485 --- [rentacar] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-31T19:36:54.006+05:30  INFO 16485 --- [rentacar] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-31T19:36:54.010+05:30  INFO 16485 --- [rentacar] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
